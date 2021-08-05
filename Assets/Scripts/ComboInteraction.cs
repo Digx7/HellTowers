@@ -12,33 +12,59 @@ public class ComboInteraction : MonoBehaviour
     private bool isOn = false;
 
     [SerializeField]
-    private int currentIndex;
+    private int currentIndex = 0;
+    [SerializeField]
+    private int maxIndex;
+
+    [SerializeField]
+    private ComboDirection lastInput;
 
     public UnityEvent comboSuccess;
     public UnityEvent comboFail;
 
+    public void Awake (){
+      maxIndex = arrowDirections.Count;
+    }
+
     public void InputReceiver(Vector2 input){
-      if(input.y > 0.1) UpInput();
-      else if(input.y < -0.1) DownInput();
+      if(input.y > 0.1) {
+        lastInput = ComboDirection.up;
+        Combo();
+      }
+      else if(input.y < -0.1) {
+        lastInput = ComboDirection.down;
+        Combo();
+      }
 
-      if(input.x > 0.1) LeftInput();
-      else if(input.x < -0.1) RightInput();
+      if(input.x > 0.1) {
+        lastInput = ComboDirection.right;
+        Combo();
+      }
+      else if(input.x < -0.1) {
+        lastInput = ComboDirection.left;
+        Combo();
+      }
     }
 
-    public void UpInput(){
-
+    public void printThisMessage(string input){
+      Debug.Log(input);
     }
 
-    public void DownInput(){
-
-    }
-
-    public void LeftInput(){
-
-    }
-
-    public void RightInput(){
-
+    private void Combo(){
+      if(isOn){
+        if(currentIndex > maxIndex) currentIndex = 0;
+        if(arrowDirections[currentIndex].chosenDirection == lastInput){
+           currentIndex++;
+           if(currentIndex == maxIndex){
+              comboSuccess.Invoke();
+              currentIndex = 0;
+            }
+         }
+        else {
+          comboFail.Invoke();
+          currentIndex = 0;
+        }
+      }
     }
 
 
