@@ -19,11 +19,21 @@ public class ComboInteraction : MonoBehaviour
     [SerializeField]
     private ComboDirection lastInput;
 
+    public UnityEvent comboStart;
     public UnityEvent comboSuccess;
     public UnityEvent comboFail;
+    public UnityEvent comboProgress;
 
     public void Awake (){
       maxIndex = arrowDirections.Count;
+    }
+
+    public void turnOnOff(bool input){
+      isOn = input;
+    }
+
+    public void toggleOnOff(){
+      isOn = !isOn;
     }
 
     public void InputReceiver(Vector2 input){
@@ -46,15 +56,25 @@ public class ComboInteraction : MonoBehaviour
       }
     }
 
+    public List<ArrowDirection> getArrowDirections(){
+      return arrowDirections;
+    }
+
+    public int getCurrentIndex(){
+      return currentIndex;
+    }
+
     public void printThisMessage(string input){
       Debug.Log(input);
     }
 
     private void Combo(){
       if(isOn){
+        if(currentIndex == 1) comboStart.Invoke();
         if(currentIndex > maxIndex) currentIndex = 0;
         if(arrowDirections[currentIndex].chosenDirection == lastInput){
            currentIndex++;
+           comboProgress.Invoke();
            if(currentIndex == maxIndex){
               comboSuccess.Invoke();
               currentIndex = 0;
@@ -66,6 +86,4 @@ public class ComboInteraction : MonoBehaviour
         }
       }
     }
-
-
 }
