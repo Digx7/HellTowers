@@ -16,6 +16,7 @@ public class PlayerInputManager : MonoBehaviour {
     //[SerializeField] private Vector2 moveDirection;
 
     [SerializeField] private Vector2Event comboInput;
+    [SerializeField] private Vector2Event moveInput;
 
 
 
@@ -68,11 +69,17 @@ public class PlayerInputManager : MonoBehaviour {
         if(isOn)comboInput.Invoke(input);
     }
 
+    private void MovementInputEvent(Vector2 input)
+    {
+        if(isOn)moveInput.Invoke(input);
+    }
+
     // --- BindingInputs ----------------------------------
 
     // This script will bind the inputs on the Input action map to the needed script
     public void BindInputs() {
         Player_Controls.Combo.Arrows.performed += ctx => ComboInputEvent(ctx.ReadValue<Vector2>());
+        Player_Controls.Character.Move.performed += ctx => MovementInputEvent(ctx.ReadValue<Vector2>());
     }
 
     // --- Enable/Disable --------------------------------
