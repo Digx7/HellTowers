@@ -109,6 +109,10 @@ public class ObjectMove : MonoBehaviour {
         isOn = input;
     }
 
+    public void NOTsetIsOn(bool input){
+      isOn = !input;
+    }
+
     public void zeroOutVelocity() {
         rb.velocity = new Vector3(0, 0, 0);
     }

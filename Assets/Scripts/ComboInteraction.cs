@@ -24,16 +24,21 @@ public class ComboInteraction : MonoBehaviour
     public UnityEvent comboFail;
     public UnityEvent comboProgress;
 
+    public BoolEvent onState;
+
     public void Awake (){
       maxIndex = arrowDirections.Count;
+      onState.Invoke(isOn);
     }
 
     public void turnOnOff(bool input){
       isOn = input;
+      onState.Invoke(isOn);
     }
 
     public void toggleOnOff(){
       isOn = !isOn;
+      onState.Invoke(isOn);
     }
 
     public void InputReceiver(Vector2 input){

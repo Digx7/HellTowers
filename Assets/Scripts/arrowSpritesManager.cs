@@ -32,6 +32,7 @@ public class arrowSpritesManager : MonoBehaviour
       comboInteraction.comboProgress.AddListener(arrowColorProgression);
       comboInteraction.comboFail.AddListener(arrowColorFailed);
       comboInteraction.comboSuccess.AddListener(arrowColorSuccess);
+      comboInteraction.onState.AddListener(setArrowSpritesActiveOrNot);
     }
 
     private void arrowSpritesGenerator(){
@@ -78,5 +79,11 @@ public class arrowSpritesManager : MonoBehaviour
 
     private void resetCurrentIndex(){
       currentIndex = 0;
+    }
+
+    private void setArrowSpritesActiveOrNot(bool input){
+      foreach(Transform arrow in arrowSpritesGenerated){
+        arrow.gameObject.SetActive(input);
+      }
     }
 }

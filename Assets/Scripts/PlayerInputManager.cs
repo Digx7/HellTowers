@@ -17,6 +17,7 @@ public class PlayerInputManager : MonoBehaviour {
 
     [SerializeField] private Vector2Event comboInput;
     [SerializeField] private Vector2Event moveInput;
+    [SerializeField] private UnityEvent inventoryInput;
 
 
 
@@ -74,12 +75,18 @@ public class PlayerInputManager : MonoBehaviour {
         if(isOn)moveInput.Invoke(input);
     }
 
+    private void InventoryInputEvent()
+    {
+        if(isOn)inventoryInput.Invoke();
+    }
+
     // --- BindingInputs ----------------------------------
 
     // This script will bind the inputs on the Input action map to the needed script
     public void BindInputs() {
         Player_Controls.Combo.Arrows.performed += ctx => ComboInputEvent(ctx.ReadValue<Vector2>());
         Player_Controls.Character.Move.performed += ctx => MovementInputEvent(ctx.ReadValue<Vector2>());
+        Player_Controls.Character.OpenInventory.performed += ctx => InventoryInputEvent();
     }
 
     // --- Enable/Disable --------------------------------
