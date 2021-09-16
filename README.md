@@ -61,9 +61,13 @@
 
 **Synopsis:**
 
+[comment]:<> (Start of Entry Body)
+
   The Player wakes up on a blank map next to their powered down S.O.S. beacon.  This beacon is all that will get the player off the planet.  However, the local aliens seem to be drawn by it’s power.  Keep them away by constructing defenses using scrap metal lying around the map. The player can explore this map and set up their defenses. But once they turn on the S.O.S. beacon the aliens will start swarm in.  Coming in waves the player must use all their resources to keep the aliens from destroying them or the beacon. 
   
-  #TODO _Expand Synopsis as it develops more_
+ #TODO *expand synopsis possible*
+
+[comment]:<> (End of Entry Body)
   
   <h2></h2>
 
@@ -131,7 +135,11 @@ about the general (i.e., overall) goal of the design.
 >This section established the definition of the game play. Definitions should include how a player wins, loses, transitions
 between levels, and the main focus of the gameplay.
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
@@ -147,7 +155,11 @@ to where they exist within the game mechanics document.
 - Player Control  
 - Game Over (Winning and Losing  
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
@@ -161,7 +173,11 @@ the player’s current game.
 objects by describing what affect they cause and how the player can use the object.
   
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
@@ -172,7 +188,11 @@ objects by describing what affect they cause and how the player can use the obje
 >• Weapons  
 >• Actions  
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
@@ -180,7 +200,11 @@ objects by describing what affect they cause and how the player can use the obje
 
 >Each property should mention a feedback as a result of the property changing.
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 
 
@@ -190,7 +214,11 @@ objects by describing what affect they cause and how the player can use the obje
 
 >Make a list of all objects that affect the player in a positive way (e.g., health replenished)
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
@@ -201,7 +229,11 @@ best suited for the game. Consider what the worst layout is, then ask yourself i
 representation can be added where you relate the physical controls to the actions in the game. When designing the UI, it may
 be valuable to research quality control and user interface (UI) design information.
 
+[comment]:<> (Start of Entry Body)
+
 #TODO
+
+[comment]:<> (End of Entry Body)
 
 <h2></h2>
 
