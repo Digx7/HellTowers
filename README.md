@@ -12,6 +12,8 @@
 ---
 [Back to top ^](/"README.md")
 
+[README](HellTowers/Public/README.md)
+
 ---
 
 ### <><><><><><><>
@@ -20,11 +22,11 @@
 
 ---
 
-__Genre:__ Tower Defense
+**Genre:** Tower Defense
 
 
 
-__Game Elements:__
+**Game Elements:**
 
 - Resource Management
 
@@ -33,7 +35,7 @@ __Game Elements:__
 - Crisis Management
 
 
-__Number of Players: __Single Player game
+**Number of Players:**Single Player game
 
 ---
 
