@@ -13,7 +13,7 @@
 ---
 
 
-<h4><u>General Information</u></h4>
+<h3><u>General Information</u></h3>
 
 
 **Genre:** Tower Defense
@@ -32,11 +32,11 @@
 
 ---
 
-[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/Public#readme)
+[Back to top ^](#h\.e\.l\.-towers-design-doc)
 
 ---
 
-<h4><u> Technical Specs</h4></u>  
+<h3><u> Technical Specs</h3></u>  
 
 **Technical Form:**
 - 3D - game enviroment (Player character, towers, and aliens)
@@ -58,9 +58,7 @@
 
 ---
 
-<h4><u>Game play</h4></u>
-
----
+<h3><u>Game Play</h3></u>
 
 **Synopsis:**
 
