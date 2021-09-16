@@ -33,7 +33,11 @@
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [Back to top ^](#top)
+=======
+[Back to top ^](#-h\.e\.l\.-towers-design-doc)
+>>>>>>> Stashed changes
 =======
 [Back to top ^](#-h\.e\.l\.-towers-design-doc)
 >>>>>>> Stashed changes
