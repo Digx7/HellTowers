@@ -1,5 +1,5 @@
 
-<h2></h2>
+<h6>top</h6>
 <h2><b>H.E.L. Towers Design Doc</b></h2>
 
 
@@ -32,7 +32,7 @@
 
 ---
 
-[Back to top ^](#h\.e\.l\.-towers-design-doc)
+[Back to top ^](#top)
 
 ---
 
