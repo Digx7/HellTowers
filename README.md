@@ -48,23 +48,23 @@
 
 ---
 
-__Technical Form:__
+**Technical Form:**
 - 3D - game enviroment (Player character, towers, and aliens)
 -  2D - game interface (Menu’s, Status  Icons, Upgrade tree’s)
 
 
-__  View: __ Top Down Isometric View
+**View:** Top Down Isometric View
   - [3/4 View](https://tvtropes.org/pmwiki/pmwiki.php/Main/ThreeQuartersView)
   - [2.5D](https://tvtropes.org/pmwiki/pmwiki.php/Main/TwoAndAHalfD)
 
 
-  __Platform:__ [Itch.io](https://itch.io/)
+  **Platform:** [Itch.io](https://itch.io/)
   
  
 
-  __Language:__ C#
+  **Language:** C#
 
-  __Device:__ PC
+  **Device:** PC
   
   ---
 
@@ -78,7 +78,7 @@ __  View: __ Top Down Isometric View
 
 ---
 
-__Synopsis:__
+**Synopsis:**
 
   The Player wakes up on a blank map next to their powered down S.O.S. beacon.  This beacon is all that will get the player off the planet.  However, the local aliens seem to be drawn by it’s power.  Keep them away by constructing defenses using scrap metal lying around the map. The player can explore this map and set up their defenses. But once they turn on the S.O.S. beacon the aliens will start swarm in.  Coming in waves the player must use all their resources to keep the aliens from destroying them or the beacon. 
   
@@ -87,7 +87,7 @@ __Synopsis:__
   ---
   
 
-__Game Play Outline__
+**Game Play Outline**
 
 
 - Opening the game application
