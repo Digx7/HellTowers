@@ -1,13 +1,14 @@
- ---
-## <b>H.E.L. Towers Design Doc</b>
+
+<h2></h2>
+<h2><b>H.E.L. Towers Design Doc</b></h2>
 
 
----
-
-<b>Art:</b>  
-<b>Audio:</b>  
-<b>Lead:</b>  @Digx7  
-<b>Programming:</b> @TelloVisionGames
+|Lead           | Art Team        | Audio Team      | Programming Team | 
+|---------------|-----------------|-----------------|------------------| 
+|name : @handle | name : @handle  | name : @handle  | name : @handle   | 
+|               | name : @handle  | name : @handle  | name : @handle   | 
+|               | name : @handle  | name : @handle  | name : @handle   | 
+|               | name : @handle  | name : @handle  | name : @handle   | 
 
 ---
 
@@ -35,9 +36,7 @@
 
 ---
 
-<h4><u> Technical Specs</h4></u>
-
----
+<h4><u> Technical Specs</h4></u>  
 
 **Technical Form:**
 - 3D - game enviroment (Player character, towers, and aliens)
