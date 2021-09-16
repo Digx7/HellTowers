@@ -10,7 +10,7 @@
 - [[#Game play]]
 
 ---
-[Back to top ^]("README.MD")
+[Back to top ^](/"README.md")
 
 ---
 
