@@ -10,9 +10,8 @@
 - [[#Game play]]
 
 ---
-[Back to top ^](/"README.md")
 
-[README](TelloVisionGames/HellTowers/blob/Public/README.md)
+[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/TelloVisionGames-patch-1#readme)
 
 ---
 
