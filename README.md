@@ -1,25 +1,19 @@
  ---
-# H.E.L. Towers Design Doc
+## <b>H.E.L. Towers Design Doc</b>
+
+
+---
+
+<b>Art:</b>  
+<b>Audio:</b>  
+<b>Lead:</b>  @Digx7  
+<b>Programming:</b> @TelloVisionGames
 
 ---
 
 
-## Contents
-- [[#General Information]]
-- [[#Technical Specs]]
-- [[#Game play]]
+<h4><u>General Information</u></h4>
 
----
-
-[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/Public#readme)
-
----
-
-### <><><><><><><>
-### General Information
-### <><><><><><><>
-
----
 
 **Genre:** Tower Defense
 
@@ -41,9 +35,7 @@
 
 ---
 
-### <><><><><><>
-### Technical Specs
-### <><><><><><>
+<h4><u> Technical Specs</h4></u>
 
 ---
 
@@ -67,9 +59,7 @@
 
 ---
 
-### <><><><>
-### Game play
-### <><><><>
+<h4><u>Game play</h4></u>
 
 ---
 
