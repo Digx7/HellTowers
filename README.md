@@ -38,8 +38,7 @@
 
 ---
 
-[Back to top ^](#Contents)
-
+[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/TelloVisionGames-patch-1#readme)
 ---
 
 ### <><><><><><>
@@ -68,7 +67,7 @@ __  View: __ Top Down Isometric View
   
   ---
 
-[Back to top ^](#Contents)
+[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/TelloVisionGames-patch-1#readme)
 
 ---
 
@@ -115,6 +114,6 @@ __Game Play Outline__
 
 ---
 
-[Back to top ^](#Contents)
+[Back to top ^](https://github.com/TelloVisionGames/HellTowers/tree/TelloVisionGames-patch-1#readme)
 
 ---
