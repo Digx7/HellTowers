@@ -5,7 +5,7 @@
 
 
 ## Contents
-- [[#General Information]]
+- [General Information]
 - [[#Technical Specs]]
 - [[#Game play]]
 
