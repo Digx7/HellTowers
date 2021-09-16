@@ -58,7 +58,13 @@
 
 ---
 
+<<<<<<< HEAD
 <h3><u>Game Play</h3></u>
+=======
+<h3><u>Game play</h3></u>
+
+---
+>>>>>>> Public
 
 **Synopsis:**
 
