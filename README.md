@@ -33,7 +33,7 @@
 
 - Crisis Management
 
-**Number of Players:**Single Player game
+**Number of Players:** Single Player game
 
 ---
 
