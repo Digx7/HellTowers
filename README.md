@@ -12,7 +12,7 @@
 ---
 [Back to top ^](/"README.md")
 
-[README](HellTowers/Public/README.md)
+[README](TelloVisionGames/HellTowers/blob/Public/README.md)
 
 ---
 
