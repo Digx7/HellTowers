@@ -33,7 +33,6 @@
 
 - Crisis Management
 
-
 **Number of Players:**Single Player game
 
 ---
@@ -52,15 +51,11 @@
 - 3D - game enviroment (Player character, towers, and aliens)
 -  2D - game interface (Menu’s, Status  Icons, Upgrade tree’s)
 
-
 **View:** Top Down Isometric View
   - [3/4 View](https://tvtropes.org/pmwiki/pmwiki.php/Main/ThreeQuartersView)
   - [2.5D](https://tvtropes.org/pmwiki/pmwiki.php/Main/TwoAndAHalfD)
 
-
-  **Platform:** [Itch.io](https://itch.io/)
-  
- 
+  **Platform:** [Itch.io](https://itch.io/) 
 
   **Language:** C#
 
