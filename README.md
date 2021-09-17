@@ -36,16 +36,17 @@
 
 |		                   |	                                                                       |
 |--------------------------|---------------------------------------------------------------------------|
+| <b>Engine</b>            | Unity 2021.1.20f1
 | <b>Platform</b>          | [Itch.io](https://itch.io/)                                               |
 | <b>Language</b>          | C#                                                                        |
 | <b>Device</b>            | PC                                                                        |
+| <b>Resolution</b>        |                                                                           |
 | <b>Technical Form</b>    | 3D - game enviroment                                                      |
 |                          | 2D - game interface                                                       |
 | <b>View</b>              | [3/4 View](https://tvtropes.org/pmwiki/pmwiki.php/Main/ThreeQuartersView) |
 |                          | [2.5D](https://tvtropes.org/pmwiki/pmwiki.php/Main/TwoAndAHalfD)          |
-
-
-
+| <b>Control</b>           | Gamepad                                                                   |
+|                          | Mouse/Keyboard (for debugging)                                            |
   
 <h2></h2>
 
