@@ -2,6 +2,19 @@
 <h6>top</h6>
 <h2><b>H.E.L. Towers Design Doc</b></h2>
 
+<h3><u>General Information</u></h3>
+
+|		                   |	                                                        |
+|--------------------------|------------------------------------------------------------|
+| <b>Genre</b>             | Tower Defense                                              |
+| <b>Number of Players</b> | Single-Player                                              | 
+| <b>Game Elements</b>     | - Resource Management                                        |
+|                          | - Problem Solving                                            |
+|                          | - Crisis Management                                          |
+
+<h2></h2>
+
+<h3><u>The Team</h3></u>
 
 |Lead           | Art Team        | Audio Team      | Programming Team | 
 |---------------|-----------------|-----------------|------------------| 
@@ -10,24 +23,7 @@
 |               | name : @handle  | name : @handle  | name : @handle   | 
 |               | name : @handle  | name : @handle  | name : @handle   | 
 
-<h2></h2>
 
-
-<h3><u>General Information</u></h3>
-
-
-**Genre:** Tower Defense
-
-
-**Game Elements:**
-
-- Resource Management
-
-- Problem Solving
-
-- Crisis Management
-
-**Number of Players:** Single
 
 <h2></h2>
 
