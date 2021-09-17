@@ -34,19 +34,18 @@
 
 <h3><u> Technical Specs</h3></u>  
 
-**Technical Form:**
-- 3D - game enviroment (Player character, towers, and aliens)
--  2D - game interface (Menu’s, Status  Icons, Upgrade tree’s)
+|		                   |	                                                                       |
+|--------------------------|---------------------------------------------------------------------------|
+| <b>Platform</b>          | [Itch.io](https://itch.io/)                                               |
+| <b>Language</b>          | C#                                                                        |
+| <b>Device</b>            | PC                                                                        |
+| <b>Technical Form</b>    | 3D - game enviroment                                                      |
+|                          | 2D - game interface                                                       |
+| <b>View</b>              | [3/4 View](https://tvtropes.org/pmwiki/pmwiki.php/Main/ThreeQuartersView) |
+|                          | [2.5D](https://tvtropes.org/pmwiki/pmwiki.php/Main/TwoAndAHalfD)          |
 
-**View:** Top Down Isometric View
-  - [3/4 View](https://tvtropes.org/pmwiki/pmwiki.php/Main/ThreeQuartersView)
-  - [2.5D](https://tvtropes.org/pmwiki/pmwiki.php/Main/TwoAndAHalfD)
 
-  **Platform:** [Itch.io](https://itch.io/) 
 
-  **Language:** C#
-
-  **Device:** PC
   
 <h2></h2>
 
