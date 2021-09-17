@@ -253,16 +253,16 @@ be valuable to research quality control and user interface (UI) design informati
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Digx7/HellTowers.svg?style=for-the-badge
 [contributors-url]: https://github.com/Digx7/HellTowers/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Digx7/HellTowers.svg?style=for-the-badge
 [forks-url]: https://github.com/Digx7/HellTowers/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Digx7/HellTowers.svg?style=for-the-badge
 [stars-url]: https://github.com/Digx7/HellTowers/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Digx7/HellTowers.svg?style=for-the-badge
 [issues-url]: https://github.com/Digx7/HellTowers/issues
 
 <!-- [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
