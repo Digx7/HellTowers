@@ -16,12 +16,13 @@
 
 <h3><u>The Team</h3></u>
 
-|Lead           | Art Team        | Audio Team      | Programming Team | 
-|---------------|-----------------|-----------------|------------------| 
-|name : @handle | name : @handle  | name : @handle  | name : @handle   | 
-|               | name : @handle  | name : @handle  | name : @handle   | 
-|               | name : @handle  | name : @handle  | name : @handle   | 
-|               | name : @handle  | name : @handle  | name : @handle   | 
+|               |                 |                   |                  |
+|---------------|-----------------|-------------------|------------------| 
+|<b>Lead</b>    | <b>Art Team</b> | <b>Audio Team</b> | <b>Programming Team</b> | 
+|name : @handle | name : @handle  | name : @handle    | name : @handle   | 
+|               | name : @handle  | name : @handle    | name : @handle   | 
+|               | name : @handle  | name : @handle    | name : @handle   | 
+|               | name : @handle  | name : @handle    | name : @handle   | 
 
 
 
