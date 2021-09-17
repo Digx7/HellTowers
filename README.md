@@ -1,6 +1,9 @@
 
 <h6>top</h6>
-<h2><b>H.E.L. Towers Design Doc</b></h2>
+
+![](banner.png)
+
+<h2></h2>
 
 <h3><u>General Information</u></h3>
 
