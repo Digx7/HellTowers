@@ -6,4 +6,6 @@ using UnityEngine;
 public class FloatType : ScriptableObject
 {
     [SerializeField] private float value;
+
+    public float Value { get => value; set => this.value = value; }
 }
