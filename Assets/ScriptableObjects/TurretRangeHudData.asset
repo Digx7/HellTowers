@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a61927d45c2eef44be846a164586948, type: 3}
+  m_Name: TurretRangeHudData
+  m_EditorClassIdentifier: 
+  isVisible: {fileID: 11400000, guid: 685e6ec808a75cd409134a7f5a37a84c, type: 2}
+  viewRadius: {fileID: 11400000, guid: c959b6accaf5094468f65e20cdaf21b1, type: 2}
+  rangeHUDColor: {r: 0.10980393, g: 0.23529413, b: 0.8745099, a: 0}
