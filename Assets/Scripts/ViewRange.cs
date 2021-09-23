@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+[RequireComponent(typeof(LineRenderer))]
 public class ViewRange : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Color materialColor;
 
     [SerializeField] private bool isRendered;
-    [SerializeField] private Material material;
-    [SerializeField] private Color color;
 
     [SerializeField] private FloatType radius;
     private float minRadius = 0;
@@ -21,10 +21,10 @@ public class ViewRange : MonoBehaviour
 
     public bool IsRendered { get => isRendered; set => isRendered = value; }
     public FloatType Radius { get => radius; set => radius = value; }
+    public Color MaterialColor { get => materialColor; set => materialColor = value; }
 
     private void Awake()
     {
-        lineRenderer = gameObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
         if (isRendered)
         {            
             RenderCircle();
@@ -57,7 +57,7 @@ public class ViewRange : MonoBehaviour
         lineRenderer.loop = true;
         lineRenderer.positionCount = defaultVertCount.Value + 1;
         lineRenderer.useWorldSpace = false;
-        lineRenderer.material = material;
+        lineRenderer.material.color = MaterialColor;
         CreatePoints();
     }    
     void CreatePoints() // from: https://gamedev.stackexchange.com/a/126429

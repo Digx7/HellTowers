@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076a1840205fcc5488ddbf51e30690f8, type: 3}
   m_Name: TurretViewRange
   m_EditorClassIdentifier: 
-  value: 150
+  value: 200
