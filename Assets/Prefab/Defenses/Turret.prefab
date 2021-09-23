@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52efac82e3859514d80057ade33f5edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 1312037431}
-  materialColor: {r: 0, g: 0, b: 0, a: 0}
   isRendered: 0
+  materialColor: {r: 0, g: 0, b: 0, a: 0}
   radius: {fileID: 11400000, guid: 55d788e07759c0c479c38278097ba8c6, type: 2}
-  defaultVertCount: {fileID: 11400000, guid: 81e9909c453755a428d649fe7d883cf6, type: 2}
+  vertCount: {fileID: 11400000, guid: d7a947cd626b4a24db392464ee88c87c, type: 2}
+  lineRenderer: {fileID: 1312037431}
 --- !u!120 &1312037431
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -56,7 +56,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139890246593124347}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
