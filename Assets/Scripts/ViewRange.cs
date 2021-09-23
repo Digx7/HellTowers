@@ -11,29 +11,38 @@ public class ViewRange : MonoBehaviour
 
     [SerializeField] private FloatType radius;
     [SerializeField] private IntegerType defaultVertCount;
-    [SerializeField] private float xRadius;
-    [SerializeField] private float zRadius;
 
     public bool IsRendered { get => isRendered; set => isRendered = value; }
-    public float XRadius { get => xRadius; set => xRadius = value; }
-    public float ZRadius { get => zRadius; set => zRadius = value; }
+    public FloatType Radius { get => radius; set => radius = value; }
 
     private void Start()
     {
-        if (isRendered)
-        {
-            lineRenderer.positionCount = defaultVertCount.Value + 1;
-            lineRenderer.useWorldSpace = false;
-            CreatePoints();
-        }
     }
 
     private void Update()
     {
-        
+        // there has absolutely got to be a better way to do this.
+        // that being said, this is how I'm doing it for the time being.
+        // TODO Come back to this
+        if(!isRendered)
+        {
+            lineRenderer.enabled = false;
+        }
+        else
+        {
+            RenderCircle();
+        }
     }
 
-
+    void RenderCircle()
+    {
+        lineRenderer.enabled = true;
+        lineRenderer.positionCount = defaultVertCount.Value + 1;
+        lineRenderer.useWorldSpace = false;
+        lineRenderer.startColor = color;
+        lineRenderer.endColor = color;
+        CreatePoints();
+    }    
     void CreatePoints() // from: https://gamedev.stackexchange.com/a/126429
     {
         float x;
@@ -44,8 +53,8 @@ public class ViewRange : MonoBehaviour
 
         for (int i = 0; i < (this.defaultVertCount.Value + 1); i++)
         {
-            x = Mathf.Sin(Mathf.Deg2Rad * angle) * this.XRadius;
-            z = Mathf.Cos(Mathf.Deg2Rad * angle) * this.ZRadius;
+            x = Mathf.Sin(Mathf.Deg2Rad * angle) * this.Radius.Value;
+            z = Mathf.Cos(Mathf.Deg2Rad * angle) * this.Radius.Value;
 
             lineRenderer.SetPosition(i, new Vector3(x, 0, z));
 

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed01d6d88358e1469c6bf1d7ef06de9, type: 3}
   m_Name: TurretViewCircleVertCount
   m_EditorClassIdentifier: 
-  value: 10
+  value: 25
