@@ -211,7 +211,7 @@
 <h2></h2>
 
 <h3><u>Design Document</h3></u>
-<!-->
+<!--
 >This document describes how GameObjects behave, how they’re controlled and their properties. This is often referred to as
 the “mechanics” of the game. This documentation is primarily concerned with
 the game itself. This part of the document is meant to be modular, meaning you could have several different Game Design Documents attached to the Concept Document.
