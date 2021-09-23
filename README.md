@@ -211,18 +211,18 @@
 <h2></h2>
 
 <h3><u>Design Document</h3></u>
-
+<!-->
 >This document describes how GameObjects behave, how they’re controlled and their properties. This is often referred to as
 the “mechanics” of the game. This documentation is primarily concerned with
 the game itself. This part of the document is meant to be modular, meaning you could have several different Game Design Documents attached to the Concept Document.
-
+-->
 <h2></h2>
 
 <b>Design Guidelines</b>
-
+<!--
 >This is an important statement about any creative restrictions that need to be considered and includes brief statements
 about the general (i.e., overall) goal of the design.
-
+-->
 
 While the overall inspiration for the game is HellDivers, we are not aiming for the same art style as HellDivers. 
 
@@ -279,8 +279,6 @@ to where they exist within the game mechanics document.
 [comment]:<> (End of Entry Body)
 
 -->
-
-<h2></h2>
 
 <b>Player Definitions</b>
 
