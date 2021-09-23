@@ -5,18 +5,35 @@ using System;
 
 public class ViewRange : MonoBehaviour
 {
+    private LineRenderer lineRenderer;
+
     [SerializeField] private bool isRendered;
-    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Material material;
     [SerializeField] private Color color;
 
     [SerializeField] private FloatType radius;
+    private float minRadius = 0;
+    private float maxRadius = 500;
+
+
     [SerializeField] private IntegerType defaultVertCount;
+    
 
     public bool IsRendered { get => isRendered; set => isRendered = value; }
     public FloatType Radius { get => radius; set => radius = value; }
 
-    private void Start()
+    private void Awake()
     {
+        lineRenderer = gameObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
+        if (isRendered)
+        {            
+            RenderCircle();
+        }
+    }
+
+    private void OnValidate()
+    {
+        radius.Value = Mathf.Clamp(radius.Value, minRadius, maxRadius); // or int.MaxValue, if you need to use an int but can't use uint.
     }
 
     private void Update()
@@ -37,10 +54,10 @@ public class ViewRange : MonoBehaviour
     void RenderCircle()
     {
         lineRenderer.enabled = true;
+        lineRenderer.loop = true;
         lineRenderer.positionCount = defaultVertCount.Value + 1;
         lineRenderer.useWorldSpace = false;
-        lineRenderer.startColor = color;
-        lineRenderer.endColor = color;
+        lineRenderer.material = material;
         CreatePoints();
     }    
     void CreatePoints() // from: https://gamedev.stackexchange.com/a/126429
