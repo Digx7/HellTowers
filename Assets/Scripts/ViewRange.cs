@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[RequireComponent(typeof(LineRenderer))]
+
 public class ViewRange : MonoBehaviour
 {
     [SerializeField] private bool isRendered;
     
     [SerializeField] private Color materialColor;
 
+   
     [SerializeField] private FloatType radius;
-    private float minRadius = 0;
-    private float maxRadius = 500;
-
-
     [SerializeField] private IntegerType vertCount;
-    private int minVertCount = 0;
-    private int maxVertCount = 100;
 
 
-    [SerializeField] private LineRenderer lineRenderer;
+    private LineRenderer lineRenderer;
 
 
     
@@ -32,18 +27,15 @@ public class ViewRange : MonoBehaviour
 
     private void Awake()
     {
+        lineRenderer = gameObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
+
         if (isRendered)
         {            
             RenderCircle();
 
         }
     }
-
-    private void OnValidate()
-    {
-        ClampProperties();
-    }
-
+   
     private void Update()
     {
         // there has absolutely got to be a better way to do this.
@@ -61,7 +53,6 @@ public class ViewRange : MonoBehaviour
 
     void RenderCircle()
     {
-        ClampProperties();
         lineRenderer.enabled = true;
         lineRenderer.loop = true;
         lineRenderer.positionCount = vertCount.Value + 1;
@@ -88,9 +79,4 @@ public class ViewRange : MonoBehaviour
         }
     }
 
-    void ClampProperties()
-    {
-        radius.Value = Mathf.Clamp(radius.Value, minRadius, maxRadius); // or int.MaxValue, if you need to use an int but can't use uint.
-        vertCount.Value = Mathf.Clamp(vertCount.Value, minVertCount, maxVertCount);
-    }
 }
