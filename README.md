@@ -26,13 +26,13 @@
 
 <h3><u>The Team</h3></u>
 
-|               |                 |                   |                  |
-|---------------|-----------------|-------------------|------------------| 
-|<b>Lead</b>    | <b>Art Team</b> | <b>Audio Team</b> | <b>Programming Team</b> | 
-|name : @handle | name : @handle  | name : @handle    | name : @handle   | 
-|               | name : @handle  | name : @handle    | name : @handle   | 
-|               | name : @handle  | name : @handle    | name : @handle   | 
-|               | name : @handle  | name : @handle    | name : @handle   | 
+|                                   |                 |                   |                         |
+|-----------------------------------|-----------------|-------------------|-------------------------| 
+|<b>Lead</b>                        | <b>Art Team</b> | <b>Audio Team</b> | <b>Programming Team</b> | 
+| [Digx7](https://github.com/Digx7) | name : @handle  | name : @handle    | name : @handle          | 
+|                                   | name : @handle  | name : @handle    | name : @handle          | 
+|                                   | name : @handle  | name : @handle    | name : @handle          | 
+|                                  | name : @handle  | name : @handle    | name : @handle          | 
 
 
 
