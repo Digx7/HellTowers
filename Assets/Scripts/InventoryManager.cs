@@ -22,15 +22,28 @@ public class InventoryManager : MonoBehaviour
       setComboIsOnState(isOn);
     }
 
+    public void setIsOn(bool input){
+      isOn = input;
+      onState.Invoke(isOn);
+      setComboIsOnState(isOn);
+    }
+
     private void setUpInventory(){
       foreach(Transform item in inventory.transform){
-        if(item.TryGetComponent(out ComboInteraction combo))
+        if(item.TryGetComponent(out ComboInteraction combo)){
+          item.GetComponent<ComboInteraction>().comboSuccess.AddListener(comboTriggered);
           combosAvailable.Add(item.GetComponent<ComboInteraction>());
+        }
+
       }
       setComboIsOnState(false);
     }
 
     private void setComboIsOnState(bool input){
       foreach(ComboInteraction combo in combosAvailable) combo.turnOnOff(input);
+    }
+
+    private void comboTriggered(){
+      setIsOn(false);
     }
 }

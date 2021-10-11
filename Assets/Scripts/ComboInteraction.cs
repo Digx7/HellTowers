@@ -34,11 +34,13 @@ public class ComboInteraction : MonoBehaviour
     public void turnOnOff(bool input){
       isOn = input;
       onState.Invoke(isOn);
+      if(!isOn) IndexReset();
     }
 
     public void toggleOnOff(){
       isOn = !isOn;
       onState.Invoke(isOn);
+      if(!isOn) IndexReset();
     }
 
     public void InputReceiver(Vector2 input){
@@ -90,5 +92,9 @@ public class ComboInteraction : MonoBehaviour
           currentIndex = 0;
         }
       }
+    }
+
+    private void IndexReset(){
+      currentIndex = 0;
     }
 }

@@ -84,6 +84,10 @@ public class arrowSpritesManager : MonoBehaviour
     private void setArrowSpritesActiveOrNot(bool input){
       foreach(Transform arrow in arrowSpritesGenerated){
         arrow.gameObject.SetActive(input);
+        if(input == false){
+          arrowColorReset();
+          currentIndex = 0;
+        }
       }
     }
 }
