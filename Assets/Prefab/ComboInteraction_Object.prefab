@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 3283390648676711135}
   - component: {fileID: 3283390648676711134}
   - component: {fileID: 3283390648676711132}
+  - component: {fileID: 869012680324567621}
   m_Layer: 0
   m_Name: ComboInteraction_Object
   m_TagString: Untagged
@@ -156,6 +157,18 @@ MonoBehaviour:
           m_StringArgument: Combo Success
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 869012680324567621}
+        m_TargetAssemblyTypeName: SpawnerScript, Assembly-CSharp
+        m_MethodName: startSpawning
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   comboFail:
     m_PersistentCalls:
       m_Calls:
@@ -211,6 +224,19 @@ MonoBehaviour:
   inventoryInput:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &869012680324567621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283390648676711129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25429aa397b77714d8ede360e128d40e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 0}
 --- !u!1 &5171954633530023129
 GameObject:
   m_ObjectHideFlags: 0
