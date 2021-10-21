@@ -194,7 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectInMotion: {fileID: 216787255042799391}
-  objectToRotate: {fileID: 7792443125811349078}
+  objectToRotate: {fileID: 3959837034647359735}
+  speed: 100
 --- !u!1 &752465211022468661
 GameObject:
   m_ObjectHideFlags: 0

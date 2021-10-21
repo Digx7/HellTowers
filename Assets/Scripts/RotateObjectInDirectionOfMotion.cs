@@ -8,18 +8,38 @@ public class RotateObjectInDirectionOfMotion : MonoBehaviour
     private Rigidbody objectInMotion;
     private Vector3 directionOfMotion;
     [SerializeField]
-    private GameObject objectToRotate;
+    private Transform objectToRotate;
+    [SerializeField]
+    private float speed;
+    private float maxMagnitudeD = 100000000;
+
+    [SerializeField]
+    private bool snapsBackUnderNoMotion = false;
 
     private void FixedUpdate(){
-      setDirectionOfMotion(objectInMotion.velocity);
-      objectToRotate.transform.right = directionOfMotion; // will need to do some conversions here to get it to look properly in scene
+        setDirectionOfMotion(objectInMotion.velocity);
+        if(canRotate()) applyRotation();
     }
 
     private void setDirectionOfMotion(Vector3 input){
       directionOfMotion = input;
     }
 
-    public void setObjectToRotate(GameObject input){
+    private void applyRotation(){
+      Vector3 newDirection = Vector3.RotateTowards(objectToRotate.forward, directionOfMotion, speed, maxMagnitudeD);
+      Debug.DrawRay(objectToRotate.position, newDirection, Color.red);
+      objectToRotate.rotation = Quaternion.LookRotation(newDirection);
+    }
+
+    private bool canRotate(){
+      if(!snapsBackUnderNoMotion){
+        if(directionOfMotion.magnitude >= 0.1 || directionOfMotion.magnitude <= -0.1) return true;
+        else return false;
+      }
+      else return true;
+    }
+
+    public void setObjectToRotate(Transform input){
       objectToRotate = input;
     }
 }
