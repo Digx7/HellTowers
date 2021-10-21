@@ -18,7 +18,7 @@ MonoBehaviour:
   spawnRateRange: {x: 0, y: 0}
   maxSpawn: 1
   spawnInfinitly: 0
-  spawnMode: 0
+  spawnMode: 2
   spawnLocationGameObject: {fileID: 0}
   useGameObjectRotation: 0
   spawnLocation: {x: 0, y: 0, z: 0}
