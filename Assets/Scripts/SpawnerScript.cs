@@ -36,6 +36,7 @@ public class SpawnerScript : MonoBehaviour {
         float rate;
         Vector3 location;
         Quaternion rotation;
+        //Spawn.mode _mode = spawn.spawnmode;
 
         // will run until has hit max rate
         while (x < spawn.maxSpawn) {
@@ -47,7 +48,7 @@ public class SpawnerScript : MonoBehaviour {
             if (!spawn.spawnInfinitly) x++;
 
             //find spawn location
-            if (spawn.spawnMode == Spawn.mode.UseCordinates) {
+            /*if (spawn.spawnMode == Spawn.mode.UseCordinates) {
                 location = new Vector3(
                     UnityEngine.Random.Range(spawn.spawnLocationXRange.x, spawn.spawnLocationXRange.y),
                     UnityEngine.Random.Range(spawn.spawnLocationYRange.x, spawn.spawnLocationYRange.y),
@@ -62,7 +63,40 @@ public class SpawnerScript : MonoBehaviour {
             } else {
                 location = spawn.spawnLocationGameObject.transform.position;
                 rotation = spawn.spawnLocationGameObject.transform.rotation;
+            }*/
+
+            switch (spawn.spawnMode) {
+
+              case Spawn.mode.UseCordinates:
+                  location = new Vector3(
+                      UnityEngine.Random.Range(spawn.spawnLocationXRange.x, spawn.spawnLocationXRange.y),
+                      UnityEngine.Random.Range(spawn.spawnLocationYRange.x, spawn.spawnLocationYRange.y),
+                      UnityEngine.Random.Range(spawn.spawnLocationZRange.x, spawn.spawnLocationZRange.y)
+                      );
+                  location += spawn.spawnLocation;
+                  if (spawn.spawnRelitiveToThisGameObject) {
+                      location += gameObject.transform.position;
+                  }
+
+                  rotation = Quaternion.identity;
+                break;
+
+              case Spawn.mode.UseObject:
+                  location = spawn.spawnLocationGameObject.transform.position;
+                  rotation = spawn.spawnLocationGameObject.transform.rotation;
+                break;
+
+              case Spawn.mode.UseSpawnerScriptLocation:
+                  location = this.transform.position;
+                  rotation = this.transform.rotation;
+                break;
+
+              default:
+                location = new Vector3();
+                rotation = new Quaternion();
+                break;
             }
+
             //spawn object
             GameObject g = Instantiate(spawn.spawnableObject, location, rotation);
 

@@ -22,7 +22,7 @@ public class Spawn: ScriptableObject {
     [Tooltip("Set to spawn indefinetly (will ignore the max spawn)")]
     public bool spawnInfinitly = false;
 
-    public enum mode { UseCordinates, UseObject };
+    public enum mode { UseCordinates, UseObject, UseSpawnerScriptLocation };
 
     [Tooltip("UseCordinates: The spawn location is set by the cordinates below\nUseObject: The spawn locations is set by the position of the GameObject below")]
     public mode spawnMode = mode.UseObject;
