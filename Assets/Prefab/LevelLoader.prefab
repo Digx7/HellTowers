@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5208b04b940319f40afafb21cb4e8330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1069433279872864884}
+  transitionTime: 1
 --- !u!1 &7120708506120999282
 GameObject:
   m_ObjectHideFlags: 0

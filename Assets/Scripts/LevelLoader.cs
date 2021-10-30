@@ -9,7 +9,6 @@ public class LevelLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -21,15 +20,15 @@ public class LevelLoader : MonoBehaviour
     
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadLevel("Dev Scene"));
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    IEnumerator LoadLevel(string levelIndex)
     {
-        transition.SetTrigger("Start");                  //Play animation
+        transition.SetTrigger("Start");                     //Play animation
 
-        yield return new WaitForSeconds(transitionTime); //Wait
+        yield return new WaitForSeconds(transitionTime);    //Wait
 
-        SceneManager.LoadScene(levelIndex);    //Load Scene
+        SceneManager.LoadScene(levelIndex);                 //Load Scene
     }
 }
